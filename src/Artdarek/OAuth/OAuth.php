@@ -98,7 +98,7 @@ class OAuth
      */
     public function setHttpClient($httpClientName)
     {
-        $httpClientClass = '\OAuth\Common\Http\Client\$httpClientName';
+        $httpClientClass = "\\OAuth\\Common\\Http\\Client\\$httpClientName";
         $this->_serviceFactory->setHttpClient(new $httpClientClass());
     }
 
